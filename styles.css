@@ -577,144 +577,137 @@ header::after {
 
 /* Contact Section */
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 3rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border-radius: 12px;
   overflow: hidden;
+}
+
+.contact-info,
+.contact-form-area {
+  /* height: 100%; */
+  margin: 0;
 }
 
 .contact-info {
   background: #007BFF;
   color: #fff;
-  padding: 3rem 2rem;
+  flex: 1;
+  padding: 48px 36px 48px 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.contact-info h3,
-.contact-info p,
-.contact-info a,
-.contact-info .contact-item,
-.contact-info .contact-item i {
-  color: #fff !important;
+  min-width: 320px;
 }
 
 .contact-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 .contact-info p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.6rem;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .contact-item i {
-  font-size: 1.2rem;
-  width: 24px;
+  font-size: 1.35rem;
+  color: #fff;
+  min-width: 24px;
+  text-align: center;
 }
 
 .contact-item a {
-  color: white;
+  color: #fff !important;
+  font-size: 1.18rem;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: opacity 0.3s ease;
+  transition: color 0.2s;
 }
 
 .contact-item a:hover {
-  text-decoration: underline;
   color: #E5E7EB !important;
 }
 
-.contact-form {
-  padding: 3rem 2rem;
+.contact-form-area {
+  flex: 2;
+  background: #fff;
+  padding: 40px;
+  margin: 0; 
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  color: #111111;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.form-group input,
-.form-group textarea {
+.contact-form-area form {
   width: 100%;
-  padding: 0.75rem;
+}
+
+.contact-form-area .form-group {
+  margin-bottom: 24px;
+}
+
+.contact-form-area label {
+  display: block;
+  margin-bottom: 8px;
+  color: #111;
+  font-weight: 500;
+}
+
+.contact-form-area input,
+.contact-form-area textarea {
+  width: 100%;
+  padding: 12px;
   border: 1px solid #E5E7EB;
-  border-radius: 5px;
-  font-family: inherit;
+  border-radius: 6px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  background: #fff;
+  color: #111;
+  margin-bottom: 8px;
+  box-sizing: border-box;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #007BFF;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.contact-form button[type="submit"],
-.contact-form .btn {
-  background: var(--primary-blue);
+.contact-form-area button.btn {
+  background: #007BFF;
   color: #fff;
   border: none;
   border-radius: 6px;
-  padding: 0.5rem 1.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-top: 1rem;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 12px 24px;
+  font-weight: bold;
   cursor: pointer;
-}
-.contact-form button[type="submit"]:hover,
-.contact-form .btn:hover,
-.contact-form button[type="submit"]:focus,
-.contact-form .btn:focus {
-  background: var(--secondary-blue);
-  color: #fff;
+  font-size: 1rem;
+  margin-top: 12px;
+  transition: background 0.2s;
 }
 
-/* Responsive Design for Contact Section */
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-info {
-    padding: 2rem;
-  }
-  
-  .contact-form {
-    padding: 2rem;
-  }
+.contact-form-area button.btn:hover {
+  background: #339CFF;
+}
+
+/* Remove old .contact-left and .contact-right rules if present */
+.contact-left, .contact-right {
+  display: none !important;
 }
 
 /* Footer */
