@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Vemula | Data Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1 class="typing-text">
+        <span class="letter">A</span>
+        <span class="letter">k</span>
+        <span class="letter">a</span>
+        <span class="letter">s</span>
+        <span class="letter">h</span>
+        <span class="letter">&nbsp;</span>
+        <span class="letter">V</span>
+        <span class="letter">e</span>
+        <span class="letter">m</span>
+        <span class="letter">u</span>
+        <span class="letter">l</span>
+        <span class="letter">a</span>
+      </h1>
+      <p><span id="role-rotator"></span></p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li> 
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="about-container">
+        <div class="about-photo">
+          <img src="images/profile.jpg" alt="Akash Vemula profile photo" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm Akash Vemula, a passionate Data Engineer with hands-on experience in designing scalable data solutions and transforming large-scale datasets into actionable insights.
+          </p>
+          <p>
+            My expertise lies in building ETL pipelines, optimizing data workflows, and leveraging tools like Snowflake, Spark, and Airflow to ensure high-quality, reliable data delivery.
+          </p>
+          <p>
+            I am currently pursuing my Master's in Information Technology at Arizona State University and looking for opportunities to contribute my skills to impactful data engineering challenges.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Data Platform Simulation – AWS S3, Snowflake, dbt, Airflow</h3>
+        <ul>
+          <li>Built a modular pipeline using Snowflake and dbt to process and transform 1M+ rows of structured data.</li>
+          <li>Achieved a 75% reduction in processing time through incremental model optimization and staging practices.</li>
+          <li>Automated end-to-end workflows with Airflow DAGs, simulating daily batch orchestration and monitoring.</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Stock Market Streaming Pipeline – Kafka, AWS S3, Athena</h3>
+        <ul>
+          <li>Built a real-time Kafka consumer to stream stock market events as structured JSON files into AWS S3.</li>
+          <li>Configured AWS Glue Crawler to automate schema detection, reducing manual setup time by 90%.</li>
+          <li>Enabled SQL-based querying in Athena, accelerating ad-hoc data analysis and dashboarding by ~3×.</li>
+        </ul>
+      </div>
+
+      <a href="https://public.tableau.com/app/profile/akash.vemula/viz/IMDBTop1000Movies-Group49/FinalDashboard" target="_blank" class="project-card project-link">
+        <h3>IMDB Analytics Dashboard – Tableau</h3>
+        <ul>
+          <li>Created a Tableau dashboard to visualize and filter 1,000+ movies by genre, revenue, ratings, and runtime.</li>
+          <li>Delivered 6+ interactive views including KPIs and decade slicers.</li>
+          <li>Enabled trend discovery across decades and genres, improving content selection insights by 30%.</li>
+        </ul>
+      </a>
+
+      <div class="project-card">
+        <h3>School Recommendation System – Python, Scikit-learn, Pandas</h3>
+        <ul>
+          <li>Processed and normalized data for 1,200+ schools to prepare features for similarity-based modeling.</li>
+          <li>Applied cosine similarity and KNN to identify top 5 matches for input conditions.</li>
+        </ul>
+      </div>
+
+      <a href="https://github.com/akashvemula2000/harry-potter-data-pipeline" target="_blank" class="project-card project-link">
+        <h3>Harry Potter Data Pipeline – AWS S3, Snowflake, dbt, Airflow</h3>
+        <ul>
+          <li>Built an end-to-end data pipeline to automate ingestion, transformation, and orchestration for Harry Potter movie datasets.</li>
+          <li>Used AWS S3 for raw data storage, Snowflake for warehousing, dbt for transformations, and Airflow for orchestration.</li>
+          <li>Implemented dbt models, data tests, and Airflow DAGs for scalable, automated ETL workflows.</li>
+        </ul>
+      </a>
+
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="experience-container">
+
+        <!-- Left Sidebar -->
+        <div class="experience-sidebar">
+          <ul class="role-list">
+            <li class="role-item active">Data Analytics and Engineering Associate</li>
+            <li class="role-item">Data Analytics and Engineering Associate Intern</li>
+          </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="experience-details">
+
+          <!-- Data Engineer -->
+          <div class="experience-content active">
+            <div class="company-logo-name">
+              <img src="images/zs-logo.png" alt="ZS logo" class="company-logo" />
+              <h3 class="company">ZS (India)</h3>
+            </div>
+            <div class="role-date">
+              <!-- <span class="role-title">Data Analytics and Engineering Associate</span> -->
+              <span class="date">Jul 2021 – Jun 2023</span>
+            </div>
+            <hr class="divider">
+            <ul class="bullet-list">
+              <li>Optimized complex SQL scripts in Snowflake, leveraging database design best practices and data architecture principles to build key data models and transform large-scale datasets into analytics-ready tables.</li>
+              <li>Collaborated with cross-functional teams to define business requirements and translate them into data pipelines.</li>
+              <li>Delivered scalable data solutions that improved operational efficiency and impacted $12M+ in strategic decisions.</li>
+              <li>Developed 3 production-grade ETL pipelines using Informatica IICS, increasing delivery speed by 20% with 99.9% data accuracy.</li>
+              <li>Engineered distributed data workflows using Apache Spark on Databricks to handle terabytes of structured and semi-structured data.</li>
+              <li>Conducted end-to-end data validation, profiling, and cleansing to enhance quality and usability for downstream applications.</li>
+              <li>Ensured 100% SLA adherence for data products by resolving dependencies and failures via JIRA tickets.</li>
+            </ul>
+          </div>
+
+          <!-- Data Engineer Intern -->
+          <div class="experience-content">
+            <div class="company-logo-name">
+              <img src="images/zs-logo.png" alt="ZS logo" class="company-logo" />
+              <h3 class="company">ZS (India)</h3>
+            </div>
+            <div class="role-date">
+              <!-- <span class="role-title">Data Analytics and Engineering Associate Intern</span> -->
+              <span class="date">Jan 2021 – Jun 2021</span>
+            </div>
+            <hr class="divider">
+            <ul class="bullet-list">
+              <li>Deployed optimized SQL workflows in Snowflake, improving performance by 25% during client migration from Oracle to Snowflake.</li>
+              <li>Designed backend logic for Power BI dashboards tracking 15+ KPIs, enhancing reporting efficiency and insights.</li>
+              <li>Documented reporting workflows, query logic, and data specifications to support QA and long-term maintenance.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="education-container">
+
+        <!-- Left Column -->
+        <div class="education-sidebar">
+          <ul class="degree-list">
+            <li class="degree-item active">Masters</li>
+            <li class="degree-item">Bachelors</li>
+          </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="education-details">
+
+          <!-- Master of Science -->
+          <div class="education-content active">
+            <div class="company-logo-name">
+              <img src="images/asu-logo.png" alt="ASU logo" class="company-logo" />
+              <h3 class="institution">Arizona State University</h3>
+            </div>
+            <div class="degree-info">
+              <span class="degree-title">Information Technology</span>
+              <span class="degree-date">May 2025</span>
+            </div>
+            <hr class="divider">
+            <ul class="course-list">
+              <li>Advanced Data Management</li>
+              <li>Cloud Computing</li>
+              <li>Machine Learning</li>
+              <li>Big Data Systems</li>
+            </ul>
+          </div>
+
+          <!-- Bachelor of Engineering -->
+          <div class="education-content">
+            <div class="company-logo-name">
+              <img src="images/cu-logo.jpg" alt="Chandigarh University logo" class="company-logo" />
+              <h3 class="institution">Chandigarh University</h3>
+            </div>
+            <div class="degree-info">
+              <span class="degree-title">Computer Science & Engineering</span>
+              <span class="degree-date">May 2021</span>
+            </div>
+            <hr class="divider">
+            <ul class="course-list">
+              <li>Data Structures & Algorithms</li>
+              <li>Database Systems</li>
+              <li>Data Mining</li>
+              <li>Python Programming</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming & Scripting</h3>
+          <ul>
+            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Shell Scripting</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <ul>
+            <li>Snowflake</li>
+            <li>SQL Server</li>
+            <li>Oracle</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>ETL Tools</h3>
+          <ul>
+            <li>Informatica IICS</li>
+            <li>Apache Spark</li>
+            <li>Databricks</li>
+            <li>Kafka</li>
+            <li>Airflow</li>
+            <li>dbt</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud & DevOps</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>Git</li>
+            <li>CI/CD Pipelines</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Analytics & ML</h3>
+          <ul>
+            <li>Statistical Analysis</li>
+            <li>Data Modeling</li>
+            <li>Data Validation</li>
+            <li>Root Cause Analysis</li>
+            <li>Machine Learning Foundations</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>System Design</h3>
+          <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>System Design</li>
+            <li>SDLC</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <div class="resume-card">
+        <h3>Download or View My Resume</h3>
+        <p>Here you can view or download my resume to learn more about my professional background, education, and technical skills.</p>
+        <div class="resume-buttons">
+          <a href="/Akash_Vemula_Resume.pdf" download class="btn teal">Download Resume (PDF)</a>
+          <a href="/Akash_Vemula_Resume.pdf" target="_blank" class="btn light-blue">View Resume Online</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Feel free to reach out for collaborations or just a friendly hello</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:avemul13@asu.edu">avemul13@asu.edu</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/in/vemula-akash/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/akashvemula2000" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn teal">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Akash Vemula. All rights reserved.</p>
+    <p>Connect with me on LinkedIn or GitHub</p>
+  </footer>
+
+  <!-- JS for toggling experience/education cards and navigation -->
+  <script>
+    // Scroll to top on page load
+    window.onload = function() {
+      window.scrollTo(0, 0);
+      updateActiveSection();
+    }
+
+    // Update active section based on scroll position
+    function updateActiveSection() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let currentSection = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-section') === currentSection) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', updateActiveSection);
+
+    function initSectionToggle(listClass, contentClass) {
+      const items = document.querySelectorAll(listClass);
+      const contents = document.querySelectorAll(contentClass);
+
+      items.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          items.forEach(i => i.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+
+          item.classList.add('active');
+          contents[index].classList.add('active');
+        });
+      });
+    }
+
+    // Toggle for experience roles
+    initSectionToggle('.role-list .role-item', '.experience-content');
+
+    // Toggle for education degrees
+    initSectionToggle('.degree-list .degree-item', '.education-content');
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Role rotator for header
+    const roles = [
+      "Data Engineer",
+      "Data Analyst",
+      "Software Developer",
+      "BI Analyst",
+      "Business Analyst",
+      "Analytics Engineer"
+    ];
+    const groupSize = 3;
+    let groupIndex = 0;
+    const roleSpan = document.getElementById('role-rotator');
+    function showNextRoleGroup() {
+      const start = groupIndex * groupSize;
+      const group = roles.slice(start, start + groupSize);
+      roleSpan.textContent = group.join(' | ');
+      roleSpan.style.opacity = 1;
+      setTimeout(() => {
+        roleSpan.style.opacity = 0;
+        setTimeout(() => {
+          groupIndex = (groupIndex + 1) % Math.ceil(roles.length / groupSize);
+          showNextRoleGroup();
+        }, 400);
+      }, 1800);
+    }
+    if (roleSpan) {
+      roleSpan.style.transition = 'opacity 0.4s';
+      showNextRoleGroup();
+    }
+  </script>
+
+</body>
+</html>
