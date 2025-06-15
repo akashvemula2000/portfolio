@@ -88,38 +88,48 @@
     <section id="projects" class="section">
       <h2>Projects</h2>
 
-      <div class="project-card">
-        <h3>Stock Market Streaming Pipeline – Kafka, AWS S3, Athena</h3>
+      <a href="https://github.com/akashvemula2000/kafka-aws-project" target="_blank" class="project-card project-link">
+        <h3>IoT Data Streaming Pipeline</h3>
+        <p class="project-summary">Built a real-time data pipeline to simulate, process, and analyze IoT sensor data using Kafka and AWS services.</p>
+        <p class="project-tech"><strong>Tech Stack:</strong> Kafka, Python, Spark Streaming, AWS S3, AWS Glue, Athena</p>
         <ul>
-          <li>Built a real-time Kafka consumer to stream stock market events as structured JSON files into AWS S3.</li>
-          <li>Configured AWS Glue Crawler to automate schema detection, reducing manual setup time by 90%.</li>
-          <li>Enabled SQL-based querying in Athena, accelerating ad-hoc data analysis and dashboarding by ~3×.</li>
+          <li>Developed Kafka producers to simulate telemetry data from 5 different IoT data sources.</li>
+          <li>Streamed and stored incoming data as Parquet files in S3 via Spark Streaming jobs.</li>
+          <li>Configured AWS Glue Crawlers for automatic schema inference and table creation in Glue Data Catalog.</li>
+          <li>Queried structured data with Athena for analytics and reporting; enabled low-latency insights via SQL.</li>
         </ul>
-      </div>
+      </a>
 
       <a href="https://public.tableau.com/app/profile/akash.vemula/viz/IMDBTop1000Movies-Group49/FinalDashboard" target="_blank" class="project-card project-link">
-        <h3>IMDB Analytics Dashboard – Tableau</h3>
+        <h3>IMDB Analytics Dashboard</h3>
+        <p class="project-summary">Designed an interactive dashboard to visualize and filter 1,000+ movies, empowering users to explore trends by genre, revenue, and ratings.</p>
+        <p class="project-tech"><strong>Tech Stack:</strong> Tableau, Excel, Data Visualization</p>
         <ul>
-          <li>Created a Tableau dashboard to visualize and filter 1,000+ movies by genre, revenue, ratings, and runtime.</li>
-          <li>Delivered 6+ interactive views including KPIs and decade slicers.</li>
+          <li>Created a Tableau dashboard with 6+ interactive views, including KPIs and decade slicers, for comprehensive movie analytics.</li>
           <li>Enabled trend discovery across decades and genres, improving content selection insights by 30%.</li>
+          <li>Delivered a user-friendly interface for dynamic filtering and exploration of large movie datasets.</li>
         </ul>
       </a>
 
       <div class="project-card">
-        <h3>School Recommendation System – Python, Scikit-learn, Pandas</h3>
+        <h3>School Recommendation System</h3>
+        <p class="project-summary">Engineered a machine learning model to recommend top schools based on user-defined criteria, enhancing decision-making for students and parents.</p>
+        <p class="project-tech"><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, NumPy</p>
         <ul>
           <li>Processed and normalized data for 1,200+ schools to prepare features for similarity-based modeling.</li>
-          <li>Applied cosine similarity and KNN to identify top 5 matches for input conditions.</li>
+          <li>Applied cosine similarity and KNN to identify top 5 matches for input conditions, increasing recommendation accuracy.</li>
+          <li>Streamlined the recommendation workflow, reducing manual research time for users.</li>
         </ul>
       </div>
 
       <a href="https://github.com/akashvemula2000/harry-potter-data-pipeline" target="_blank" class="project-card project-link">
-        <h3>Harry Potter Data Pipeline – AWS S3, Snowflake, dbt, Airflow</h3>
+        <h3>Harry Potter Data Pipeline</h3>
+        <p class="project-summary">Built an automated data pipeline to ingest, transform, and orchestrate movie datasets for advanced analytics and reporting.</p>
+        <p class="project-tech"><strong>Tech Stack:</strong> AWS S3, Snowflake, dbt, Airflow, Python</p>
         <ul>
-          <li>Built an end-to-end data pipeline to automate ingestion, transformation, and orchestration for Harry Potter movie datasets.</li>
-          <li>Used AWS S3 for raw data storage, Snowflake for warehousing, dbt for transformations, and Airflow for orchestration.</li>
-          <li>Implemented dbt models, data tests, and Airflow DAGs for scalable, automated ETL workflows.</li>
+          <li>Automated ingestion and transformation of Harry Potter movie data using AWS S3, Snowflake, and dbt, ensuring data consistency.</li>
+          <li>Orchestrated ETL workflows with Airflow, improving pipeline reliability and scalability.</li>
+          <li>Implemented dbt models, data tests, and Airflow DAGs for robust, production-ready analytics.</li>
         </ul>
       </a>
 
