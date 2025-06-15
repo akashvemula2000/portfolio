@@ -42,6 +42,11 @@ p, li, label, input, textarea, select, button {
   line-height: 1.5;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 small, .small, .subtext {
   font-size: 14px;
 }
@@ -446,6 +451,8 @@ header::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  justify-items: center;
+  text-align: center;
 }
 
 .skill-category {
@@ -453,6 +460,14 @@ header::after {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 260px;
+  max-width: 320px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .skill-category h3 {
@@ -460,6 +475,19 @@ header::after {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.skill-category h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--secondary-blue);
+  margin: 8px auto 0 auto;
+  border-radius: 1px;
+  opacity: 0.5;
 }
 
 .skill-category ul {
@@ -467,19 +495,19 @@ header::after {
   padding: 0;
   margin: 0;
   color: var(--subtext);
+  text-align: center;
 }
 
 .skill-category li {
   margin-bottom: 0.75rem;
-  padding-left: 1.5rem;
+  padding-left: 0;
   position: relative;
+  display: block;
+  margin-right: 0;
 }
 
 .skill-category li::before {
-  content: "•";
-  color: var(--primary-blue);
-  position: absolute;
-  left: 0;
+  content: none;
 }
 
 /* Buttons */
@@ -530,34 +558,79 @@ header::after {
 
 @media (max-width: 768px) {
   .section {
-    padding: 3rem 1rem;
+    padding: 2rem 0.5rem;
   }
-  
   .section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .project-card, .skill-category {
+    padding: 1rem;
+    font-size: 0.98rem;
+  }
+  .about-container, .experience-container, .education-container, .skills-grid {
+    flex-direction: column !important;
+    gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-photo {
+    max-width: 50%;
+  }
+
+  .about-photo img {
+    max-width: 100%;
+    min-width: 120px;
+    border-radius: 14px;
   }
   
-  .experience-container,
-  .education-container {
+  .company-logo {
+    height: 28px;
+    max-width: 40px;
+  }
+  .contact-container {
     flex-direction: column;
+    gap: 0;
   }
-  
-  .experience-sidebar,
-  .education-sidebar {
-    max-width: none;
+  .contact-info, .contact-form-area {
+    min-width: 0;
+    width: 100%;
+    border-radius: 12px;
+    margin: 0 0 18px 0;
+    box-shadow: none;
+    padding: 1.2rem 1rem;
   }
-  
-  .experience-details,
-  .education-details {
-    padding: 1.5rem;
+  .contact-form-area {
+    margin-bottom: 0;
   }
-  
+  .btn, .contact-form-area button.btn {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .form-group input, .form-group textarea {
+    font-size: 1.05rem;
+    padding: 0.9rem;
+  }
+  #mobile-nav {
+    left: 8px;
+    right: 8px;
+    padding: 0.5rem 0.2rem;
+    border-radius: 8px;
+    top: 56px;
+    transition: all 0.3s;
+  }
+  #mobile-nav a {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
   #navbar ul {
-    gap: 1.5rem;
+    display: none;
   }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
+  #hamburger-menu {
+    display: flex;
   }
 }
 
@@ -766,21 +839,24 @@ hr, .divider {
   gap: 2.5rem;
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .about-photo {
-  flex: none;
-  height: 100%;
-  display: flex;
+  flex: 0 0 auto;
+  max-width: 340px;
+  margin: 0;
 }
 
 .about-photo img {
-  height: 100%;
-  width: auto;
-  max-width: 320px;
-  min-width: 200px;
-  object-fit: cover;
+  width: 320px;
+  max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   border: 4px solid #fff;
@@ -790,25 +866,25 @@ hr, .divider {
 
 .about-text {
   flex: 1;
+  text-align: left;
 }
 
-@media (max-width: 768px) {
-  .about-container {
+@media (max-width: 900px) {
+  .about-content {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 2rem;
   }
   .about-photo {
-    width: 100%;
-    height: auto;
-    justify-content: center;
+    max-width: 90vw;
   }
   .about-photo img {
     width: 100%;
-    max-width: 320px;
-    min-width: 160px;
-    height: auto;
-    min-height: 160px;
+    min-width: 0;
+    max-width: 340px;
+  }
+  .about-text {
+    text-align: center;
   }
 }
 

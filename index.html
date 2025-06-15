@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Akash Vemula</title>
+  <title>Akash Vemula Portfolio</title>
+  <link rel="icon" type="image/jpeg" href="Images/favicon.jpeg" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -60,21 +61,24 @@
   <main>
 
     <!-- About Section -->
+    <!-- <h2>About Me</h2> -->
     <section id="about" class="section">
+      <h2>About Me</h2>
+
       <div class="about-container">
         <div class="about-photo">
-          <img src="Images/Profile.jpg" alt="Akash Vemula profile photo" />
+          <img src="images/Profile.jpg" alt="Akash Vemula profile photo" />
         </div>
         <div class="about-text">
-          <h2>About Me</h2>
+          
           <p>
-            I'm Akash Vemula, a passionate Data Engineer with hands-on experience in designing scalable data solutions and transforming large-scale datasets into actionable insights.
+            I am passionate about working at the intersection of data, analytics, and technology, where I build scalable systems to process, transform, and visualize data into actionable insights. My professional experience includes working with cloud platforms, distributed data pipelines, data modeling, ETL frameworks, and business intelligence solutions.
           </p>
           <p>
-            My expertise lies in building ETL pipelines, optimizing data workflows, and leveraging tools like Snowflake, Spark, and Airflow to ensure high-quality, reliable data delivery.
+            I have developed strong hands-on expertise with tools such as Snowflake, Databricks, Kafka, Airflow, dbt, and AWS, supported by a solid foundation in programming (Python, SQL, Java) and system design. I enjoy solving complex data challenges, optimizing workflows, and contributing to data-driven decision-making across cross-functional teams.
           </p>
           <p>
-            I am currently pursuing my Master's in Information Technology at Arizona State University and looking for opportunities to contribute my skills to impactful data engineering challenges.
+            I look forward to working in collaborative environments where I can combine my technical skills, business understanding, and problem-solving mindset to deliver meaningful impact.
           </p>
         </div>
       </div>
@@ -83,15 +87,6 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
       <h2>Projects</h2>
-
-      <div class="project-card">
-        <h3>Data Platform Simulation – AWS S3, Snowflake, dbt, Airflow</h3>
-        <ul>
-          <li>Built a modular pipeline using Snowflake and dbt to process and transform 1M+ rows of structured data.</li>
-          <li>Achieved a 75% reduction in processing time through incremental model optimization and staging practices.</li>
-          <li>Automated end-to-end workflows with Airflow DAGs, simulating daily batch orchestration and monitoring.</li>
-        </ul>
-      </div>
 
       <div class="project-card">
         <h3>Stock Market Streaming Pipeline – Kafka, AWS S3, Athena</h3>
@@ -149,7 +144,7 @@
           <!-- Data Engineer -->
           <div class="experience-content active">
             <div class="company-logo-name">
-              <img src="Images/zs-logo.png" alt="ZS logo" class="company-logo" />
+              <img src="images/zs-logo.png" alt="ZS logo" class="company-logo" />
               <h3 class="company">ZS (India)</h3>
             </div>
             <div class="role-date">
@@ -171,7 +166,7 @@
           <!-- Data Engineer Intern -->
           <div class="experience-content">
             <div class="company-logo-name">
-              <img src="Images/zs-logo.png" alt="ZS logo" class="company-logo" />
+              <img src="images/zs-logo.png" alt="ZS logo" class="company-logo" />
               <h3 class="company">ZS (India)</h3>
             </div>
             <div class="role-date">
@@ -209,7 +204,7 @@
           <!-- Master of Science -->
           <div class="education-content active">
             <div class="company-logo-name">
-              <img src="Images/asu-logo.png" alt="ASU logo" class="company-logo" />
+              <img src="images/asu-logo.png" alt="ASU logo" class="company-logo" />
               <h3 class="institution">Arizona State University</h3>
             </div>
             <div class="degree-info">
@@ -218,17 +213,18 @@
             </div>
             <hr class="divider">
             <ul class="course-list">
-              <li>Advanced Data Management</li>
-              <li>Cloud Computing</li>
-              <li>Machine Learning</li>
-              <li>Big Data Systems</li>
+              <li>Advanced Database Management</li>
+              <li>Cloud Architecture with AWS</li>
+              <li>Natural Language Processing</li>
+              <li>Data Visualization</li>
+              <li>Mahchine Learning</li>
             </ul>
           </div>
 
           <!-- Bachelor of Engineering -->
           <div class="education-content">
             <div class="company-logo-name">
-              <img src="Images/cu-logo.jpg" alt="Chandigarh University logo" class="company-logo" />
+              <img src="images/cu-logo.jpg" alt="Chandigarh University logo" class="company-logo" />
               <h3 class="institution">Chandigarh University</h3>
             </div>
             <div class="degree-info">
@@ -238,7 +234,7 @@
             <hr class="divider">
             <ul class="course-list">
               <li>Data Structures & Algorithms</li>
-              <li>Database Systems</li>
+              <li>Database Management Systems</li>
               <li>Data Mining</li>
               <li>Python Programming</li>
             </ul>
@@ -255,7 +251,7 @@
         <div class="skill-category">
           <h3>Programming & Scripting</h3>
           <ul>
-            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>Python</li>
             <li>Java</li>
             <li>SQL</li>
             <li>Shell Scripting</li>
@@ -318,7 +314,7 @@
     <section id="resume" class="section">
       <h2>Resume</h2>
       <img 
-        src="Images/resume.png" 
+        src="images/resume.png" 
         alt="Akash Vemula Resume" 
         style="
           width:100%;
@@ -502,6 +498,37 @@
         hamburger.classList.remove('open');
       });
     });
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const action = form.action;
+      const thankyou = document.getElementById('thankyou-message');
+      fetch(action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.style.display = 'none';
+          thankyou.style.display = 'block';
+        } else {
+          thankyou.textContent = 'Oops! There was a problem submitting your form.';
+          thankyou.style.display = 'block';
+        }
+      }).catch(error => {
+        thankyou.textContent = 'Oops! There was a problem submitting your form.';
+        thankyou.style.display = 'block';
+      });
+    });
+
+    document.getElementById('fill-again-btn').onclick = function() {
+      document.getElementById('thankyou-message').style.display = 'none';
+      const form = document.getElementById('contactForm');
+      form.reset();
+      form.style.display = 'block';
+    };
   </script>
 
 </body>
